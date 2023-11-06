@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const parent = React.createElement('div', { id: 'parent' }, [
-	React.createElement('div', { id: 'child1' }, [
-		React.createElement('h1', { id: 'head' }, 'This is Nameste React'),
-		React.createElement('h2', { id: 'para' }, 'This is a paragraph')
-	]),
-	React.createElement('div', { id: 'child2' }, [
-		React.createElement('h1', { id: 'head' }, 'Hello World'),
-		React.createElement('h2', { id: 'para' }, 'This is the second paragraph')
-	])
-]);
+const Title = () => <h1 id="title">Nameste React </h1>;
 
-const heading = React.createElement('h1', { id: 'head' }, 'Hello World from React');
+const name = 'Soumya Chakraborty';
+const Header = () => (
+	<>
+		{Title()}
+		<h2 className="head">Hello from React Functional Component!</h2>
+	</>
+);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(parent);
+
+root.render(Header());
