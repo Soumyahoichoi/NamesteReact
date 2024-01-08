@@ -1,6 +1,23 @@
-#title {
-	color: blue;
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgb(221, 221, 224);
 }
-.head {
-	color: red;
+
+.logo {
+	width: 120px;
+	cursor: pointer;
+}
+
+.nav-items-container > ul {
+	display: flex;
+	list-style-type: none;
+}
+
+.nav-items-container > ul > li {
+	margin: 10px;
+	padding: 10px;
+	font-size: 20px;
+	cursor: pointer;
 }
